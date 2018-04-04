@@ -1,0 +1,35 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height:100vh; 
+}
+.sidenav{
+    width: 240px;
+    background-color: #2b323a;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    font-family: calibri;
+    padding:20px;
+}
+.sidenav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181 ;
+    display: block;
+    font-family: calibri;
+}
+.sidenav a:hover {
+    color: #f1f1f1 ;
+}
+.material-icons {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.btn{
+    background-color: #5cb85c;
+    color:#fff;
+    height: 40px;
+    width: 100px;
+}

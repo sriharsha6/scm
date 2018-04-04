@@ -1,0 +1,69 @@
+.btn{
+    background-color: #5cb85c;
+    color:#fff;
+    height: 40px;
+    width: 100px;
+}
+.card{
+    height:260px;
+    width:auto;
+    margin-top:5px;
+    margin-left:15px;
+    border-radius: 2px;
+    float: left;
+    background-color:whitesmoke; 
+}
+.icon mat-icon{
+    font-size: 50px;
+    color: #d23c30;
+}
+.payments p{
+    font-size: 13px;
+    font-family: calibri;
+}
+.payments h4{
+    font-size: 30px;
+    font-family: calibri;
+    color: #d23c30;
+}
+.dates li{
+    list-style: none;
+    font-size: 20px;
+    color:grey;
+}
+.card1{
+    height:260px;
+    width:440px;
+    margin-top:5px;
+    margin-left:15px;
+    border-radius: 2px;
+    float: left;
+    background-color:whitesmoke; 
+}
+.supplies h1{
+    font-size: 15px;
+    font-family: calibri;
+    color:#0f61c6;
+}
+.supplies p{
+    font-size:20px;
+    font-family: calibri;
+}
+.Milk li{
+    list-style: none;
+    font-size: 10px;
+    line-height: 22px;
+}
+.litre li{
+    list-style: none;
+    font-size: 14px;
+}
+.packets li{
+    list-style: none;
+    font-size: 14px;
+}
+.button{
+    background-color: #5cb85c;
+    color:#fff;
+    margin-left: 300px;
+}

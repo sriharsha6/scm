@@ -1,0 +1,37 @@
+<div class="section">
+  <div class="image example-container">
+    <mat-card class="example-card">
+      <div class="row">
+        <div class="img">
+          <img mat-card-image src="/assets/images/logo.png">
+        </div>
+      </div>
+      <mat-card-content>
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="Enter your email" [formControl]="email" required>
+            <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="example-container">
+          <mat-form-field>
+            <input matInput placeholder="Enter your password" [formControl]="password" requried [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            <mat-error *ngIf="email.invalid">{{getpasswordMessage()}}</mat-error>
+          </mat-form-field>
+          </div>
+          <div class="button-row">
+            <button mat-raised-button color="primary" routerLink="/dashboard" routerLinkActive="active">Login</button>
+          </div>
+        
+      </mat-card-content>
+
+      <div class="row">
+        <div class="col-md-12 forgot">
+          <a routerLink="/setpassword" routerLinkActive="active">Forgot your Password?</a>
+        </div>
+      </div>
+
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav class="sidenav" #sidenav mode="side" [(opened)]="opened" (opened)="('open!')" (closed)="('close!')">
+        <div class="logoimg">
+            <img src="/assets/images/logo.svg">
+        </div>
+        <div class="dashboard">
+            <a routerLink="./dashboardhome" routerLinkActive="active">
+                <span>
+                    <i class="material-icons">perm_data_setting</i>
+                </span>Dashboard</a>
+            <br>
+
+            <a routerLink="./users" routerLinkActive="active">
+                <span>
+                    <i class="material-icons">perm_data_setting</i>
+                </span>Users</a>
+            <br>
+
+            <a routerLink="./calender" routerLinkActive="active">
+                <span>
+                    <i class="material-icons">perm_data_setting</i>
+                </span>Calender</a>
+            <br>
+
+            <a routerLink="./products" routerLinkActive="active">
+                <span>
+                    <i class="material-icons">perm_data_setting</i>
+                </span>Products</a>
+            <br>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="button">
+            <button class="btn" mat-button (click)="sidenav.toggle()"><i class="material-icons">dehaze</i></button>
+        </div>
+        <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
