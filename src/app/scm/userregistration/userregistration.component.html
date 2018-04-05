@@ -7,15 +7,56 @@
           <div class="col-md-8">
             <p>User Registration</p>
           </div>
-          <div class="col-md-4 button-row">
+          <div class="col-md-4 button-row text-right">
             <button mat-raised-button color="primary">Save</button>
           </div>
-              <div class="example-container">
-                <mat-form-field>
-                  <input matInput placeholder="Enter your email" [formControl]="email" required>
-                  <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-                </mat-form-field>
-              </div>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your Name" [formControl]="Name" required>
+                <mat-error *ngIf="Name.invalid">{{getErrorName()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your email" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your Phone.no" [formControl]="mobile" required>
+                <mat-error *ngIf="mobile.invalid">{{getErrorMobile()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Create new password" [formControl]="createnewpassword" required [type]="hide ? 'password' : 'text'">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                <mat-error *ngIf="createnewpassword.invalid">{{getpasswordMessage()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Confirm password" [formControl]="confirmpassword" requried [type]="hide ? 'password' : 'text'">
+                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                <mat-error *ngIf="confirmpassword.invalid">{{getpassword1Message()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
         </div>
       </mat-card>
     </div>

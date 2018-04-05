@@ -7,17 +7,36 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./userregistration.component.css']
 })
 export class UserregistrationComponent implements OnInit {
+  Name = new FormControl('',[Validators.required]);
   email = new FormControl('', [Validators.required, Validators.email]);
-  password = new FormControl('',[Validators.required]);
-  getErrorMessage() {
+  createnewpassword = new FormControl('', [Validators.required]);
+  confirmpassword = new FormControl('',[Validators.required]);
+  mobile = new FormControl('',[Validators.required]);
+getErrorName() {
+    return this.email.hasError('required') ? 'Name required' :
+            '';
+  }
+getErrorMessage() {
     return this.email.hasError('required') ? 'Email required' :
             '';
   }
-  getpasswordMessage() {
-    return this.password.hasError('required') ? 'Password required' :
-        
+getErrorMobile(){
+    return this.mobile.hasError('required') ? 'Phone.no required' :
             '';
   }
+  getpasswordMessage() {
+    return this.createnewpassword.hasError('required') ? 'Password required' :
+    this.createnewpassword.hasError('email') ? 'Not a valid createnewpassword' :
+            '';
+  }
+  getpassword1Message() {
+    return this.confirmpassword.hasError('required') ? 'Password required' :
+        
+            '';
+
+  }
+  hide = true;
+  
   constructor() { }
 
   ngOnInit() {
