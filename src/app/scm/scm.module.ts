@@ -18,6 +18,8 @@ import { MatButtonModule } from '@angular/material/button';
 import {CommonModule} from '@angular/common';
 import { PersonaldetailsComponent } from './personaldetails/personaldetails.component';
 import { UserregistrationComponent } from './userregistration/userregistration.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 const routes: Routes = [
@@ -50,7 +52,10 @@ const routes: Routes = [
     MatGridListModule,
     RouterModule.forRoot(routes),
     MatButtonModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule,
     ],
   exports:[RouterModule], 
   providers: [CalenderService,DashboardService,ProductsService,UsersService],

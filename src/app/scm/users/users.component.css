@@ -1,11 +1,12 @@
+.search{
+    padding: 10px;
+}
 .card{
     height:auto;
     width:auto;
-    margin-top:15px;
+    margin-top:5px;
     border-radius: 2px;
-    background-color:#ffffff;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
-    font-family: calibri;
+    background-color:whitesmoke; 
 }
 .name{
     color: #fbbc05;
