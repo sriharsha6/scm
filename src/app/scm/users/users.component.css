@@ -1,0 +1,36 @@
+.card{
+    height:auto;
+    width:auto;
+    margin-top:15px;
+    border-radius: 2px;
+    background-color:#ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    font-family: calibri;
+}
+.name{
+    color: #fbbc05;
+}
+.name h5{
+    font-size:30px;
+}
+.editicon{
+    background-color: #fbbc05;
+    color: white;
+    border-radius: 10px;
+    font-size:17px;
+    margin-top: 10px;
+}
+.address h6{
+    color: lightgrey;
+}
+.payment h4{
+    font-size: 24px;
+    color: #d23c30;
+}
+.add{
+    background-color:  #fbbc05 ;
+    color: #ffffff ;
+    margin: 10px;
+    margin-right: 0px;
+    width: 40px;
+ }

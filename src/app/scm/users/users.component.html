@@ -1,6 +1,52 @@
-<div class="row">
-    <div class="">
-
+<mat-toolbar>Users</mat-toolbar>
+<div class="search">
+    <input type="text" name="search" placeholder="Search..">
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4 card" *ngFor="let item of list">
+            <div class="row">
+                <div class="col-md-8 name">
+                    <h5>{{item.name}}</h5>
+                </div>
+                <div class="col-md-4 text-right">
+                    <a routerLink="../personaldetails" routerLinkActive="active">
+                        <i class="material-icons editicon">mode_edit</i>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>{{item.mobile}}</h6>
+                </div>
+                <div class="col-md-6">
+                    <h6>{{item.email}}</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 address">
+                    <h6>{{item.address}}</h6>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12 payment">
+                    <h5>{{item.paymentDue}}</h5>
+                    <h4>{{item.amount}}</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <a routerLink="../userregistration" routerLinkActive="active">
+                <button mat-mini-fab class="add">
+                    <mat-icon>add</mat-icon>
+                </button>
+            </a>
+        </div>
     </div>
 </div>
 <router-outlet></router-outlet>

@@ -15,6 +15,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
+import {CommonModule} from '@angular/common';
+import { PersonaldetailsComponent } from './personaldetails/personaldetails.component';
+import { UserregistrationComponent } from './userregistration/userregistration.component';
 
 
 const routes: Routes = [
@@ -22,7 +25,9 @@ const routes: Routes = [
     { path:'calender',component:CalenderComponent },
     { path:'products',component:ProductsComponent },
     { path:'users',component:UsersComponent },
-    { path:'dashboardhome',component:DashboardhomeComponent }
+    { path:'dashboardhome',component:DashboardhomeComponent },
+    { path:'personaldetails',component:PersonaldetailsComponent },
+    { path:'userregistration',component:UserregistrationComponent },
   ] },
 
 ];
@@ -34,6 +39,8 @@ const routes: Routes = [
     CalenderComponent,
     ProductsComponent,
     DashboardhomeComponent,
+    PersonaldetailsComponent,
+    UserregistrationComponent,
   ],
   imports: [
     MatSidenavModule,
@@ -42,7 +49,8 @@ const routes: Routes = [
     MatIconModule,
     MatGridListModule,
     RouterModule.forRoot(routes),
-    MatButtonModule
+    MatButtonModule,
+    CommonModule
     ],
   exports:[RouterModule], 
   providers: [CalenderService,DashboardService,ProductsService,UsersService],
