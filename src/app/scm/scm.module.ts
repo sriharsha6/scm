@@ -22,6 +22,7 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 
 const routes: Routes = [
@@ -32,6 +33,7 @@ const routes: Routes = [
     { path:'dashboardhome',component:DashboardhomeComponent },
     { path:'personaldetails',component:PersonaldetailsComponent },
     { path:'userregistration',component:UserregistrationComponent },
+    { path:'userprofile', component:UserprofileComponent},
   ] },
 
 ];
@@ -45,6 +47,7 @@ const routes: Routes = [
     DashboardhomeComponent,
     PersonaldetailsComponent,
     UserregistrationComponent,
+    UserprofileComponent,
   ],
   imports: [
     MatSidenavModule,

@@ -36,6 +36,7 @@ getErrorMobile(){
 
   }
   hide = true;
+  hide1 = true;
   
   constructor() { }
 

@@ -15,6 +15,17 @@ export class PersonaldetailsComponent implements OnInit {
   city = new FormControl('',[Validators.required]);
   state = new FormControl('',[Validators.required]);
   pincode = new FormControl('',[Validators.required]);
+  community = new FormControl('', [Validators.required]);
+  subcommunity = new FormControl('', [Validators.required]);
+
+  getErrorcommunity(){
+    return this.community.hasError('required') ? 'community required' :
+    '';
+  }
+  getErrorsubcommunity(){
+    return this.subcommunity.hasError('required') ? 'subcommunity required' :
+    '';
+  }
 
 getErroruserName() {
     return this.userName.hasError('required') ? 'Name required' :

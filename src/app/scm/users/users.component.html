@@ -4,7 +4,7 @@
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-4 card" *ngFor="let item of list">
+        <div class="col-md-4 card" (click)="onSelect(item)" *ngFor="let item of list">
             <div class="row">
                 <div class="col-md-8 name">
                     <h5>{{item.name}}</h5>

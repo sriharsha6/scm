@@ -8,7 +8,7 @@
             <p>User Registration</p>
           </div>
           <div class="col-md-2">
-            <button class="btn" style="float:right;" mat-raised-button color="primary">Save</button>
+            <button class="btn" style="float:right;" mat-raised-button color="primary" routerLink="../users" routerLinkActive="active">Save</button>
           </div>
           <hr>
         </div>
@@ -51,8 +51,8 @@
           <div class="col-md-6">
             <div class="example-container">
               <mat-form-field>
-                <input matInput placeholder="Confirm password" [formControl]="confirmpassword" requried [type]="hide ? 'password' : 'text'">
-                <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+                <input matInput placeholder="Confirm password" [formControl]="confirmpassword" requried [type]="hide1 ? 'password' : 'text'">
+                <mat-icon matSuffix (click)="hide1 = !hide1">{{hide1 ? 'visibility' : 'visibility_off'}}</mat-icon>
                 <mat-error *ngIf="confirmpassword.invalid">{{getpassword1Message()}}</mat-error>
               </mat-form-field>
             </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-users',
   templateUrl: './users.component.html',
@@ -55,9 +55,13 @@ export class UsersComponent implements OnInit {
 
 ]
 
-  constructor() { }
+  constructor( private router: Router ) { }
 
   ngOnInit() {
   }
+ onSelect(item:any){
+   this.router.navigate(['dashboard/userprofile'],{queryParams: {'id': item.id}});
+   console.log(item);
+ }
 
 }

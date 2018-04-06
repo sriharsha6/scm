@@ -22,7 +22,7 @@ export class SetpasswordComponent implements OnInit {
               '';
     }
     hide = true;
-
+    hide1 = true;
 
   constructor() { }
 

@@ -43,18 +43,20 @@
           <div class="col-md-3">
             <div class="example-container">
               <mat-form-field>
-                <mat-select placeholder="Community">
+                <mat-select placeholder="Community" [formControl]="community" required>
                   <mat-option value="option">Option</mat-option>
                 </mat-select>
+                <mat-error *ngIf="community.invalid">{{getErrorcommunity()}}</mat-error>
               </mat-form-field>
             </div>
           </div>
           <div class="col-md-3">
             <div class="example-container">
               <mat-form-field>
-                <mat-select placeholder="SubCommunity">
+                <mat-select placeholder="SubCommunity" [formControl]="subcommunity" required>
                   <mat-option value="option">Option</mat-option>
                 </mat-select>
+                <mat-error *ngIf="subcommunity.invalid">{{getErrorsubcommunity()}}</mat-error>
               </mat-form-field>
             </div>
           </div>
