@@ -6,8 +6,11 @@
 .example-container > * {
     width: 100%;
   }
-.button-row {
+.btn{
     display: flex;
     justify-content: space-around;
-    width: 100%;
+  }
+  p{
+    font-size:25px;
+    color:#0d59e3;
   }

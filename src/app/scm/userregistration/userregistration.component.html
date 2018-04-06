@@ -4,16 +4,16 @@
     <div class="col-md-12">
       <mat-card>
         <div class="row">
-          <div class="col-md-8">
+          <div class="col-md-10">
             <p>User Registration</p>
           </div>
-          <div class="col-md-4 button-row text-right">
-            <button mat-raised-button color="primary">Save</button>
+          <div class="col-md-2">
+            <button class="btn" style="float:right;" mat-raised-button color="primary">Save</button>
           </div>
           <hr>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-6">
             <div class="example-container">
               <mat-form-field>
                 <input matInput placeholder="Enter your Name" [formControl]="Name" required>
@@ -21,7 +21,7 @@
               </mat-form-field>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="example-container">
               <mat-form-field>
                 <input matInput placeholder="Enter your email" [formControl]="email" required>
@@ -29,7 +29,7 @@
               </mat-form-field>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3">
             <div class="example-container">
               <mat-form-field>
                 <input matInput placeholder="Enter your Phone.no" [formControl]="mobile" required>

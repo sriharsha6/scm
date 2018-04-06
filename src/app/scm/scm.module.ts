@@ -20,6 +20,8 @@ import { PersonaldetailsComponent } from './personaldetails/personaldetails.comp
 import { UserregistrationComponent } from './userregistration/userregistration.component';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatSelectModule } from '@angular/material/select';
 
 
 const routes: Routes = [
@@ -56,6 +58,8 @@ const routes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     MatInputModule,
+    MatFormFieldModule,
+    MatSelectModule,
     ],
   exports:[RouterModule], 
   providers: [CalenderService,DashboardService,ProductsService,UsersService],

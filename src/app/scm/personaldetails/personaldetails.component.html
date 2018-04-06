@@ -1,9 +1,108 @@
 <mat-toolbar>Personal Details</mat-toolbar>
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12">
-        
+  <div class="row">
+    <div class="col-md-12">
+      <mat-card>
+        <div class="row">
+          <div class="col-md-10">
+            <p>Personal Details</p>
+          </div>
+          <div class="col-md-2">
+            <button class="btn" style="float:right;" mat-raised-button color="primary">Save</button>
+          </div>
+          <hr>
         </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your Name" [formControl]="userName" required>
+                <mat-error *ngIf="userName.invalid">{{getErroruserName()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your Phone.no" [formControl]="mobile" required>
+                <mat-error *ngIf="mobile.invalid">{{getErrorMobile()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your email" [formControl]="email" required>
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <mat-select placeholder="Community">
+                  <mat-option value="option">Option</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <mat-select placeholder="SubCommunity">
+                  <mat-option value="option">Option</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your Flat.no" [formControl]="flat" required>
+                <mat-error *ngIf="flat.invalid">{{getErrorflat()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your Locality" [formControl]="locality" required>
+                <mat-error *ngIf="locality.invalid">{{getErrorlocality()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your City" [formControl]="city" required>
+                <mat-error *ngIf="city.invalid">{{getErrorcity()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your State" [formControl]="state" required>
+                <mat-error *ngIf="state.invalid">{{getErrorstate()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="example-container">
+              <mat-form-field>
+                <input matInput placeholder="Enter your Pincode" [formControl]="pincode" required>
+                <mat-error *ngIf="pincode.invalid">{{getErrorpincode()}}</mat-error>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+      </mat-card>
     </div>
+  </div>
 </div>
 <router-outlet></router-outlet>
