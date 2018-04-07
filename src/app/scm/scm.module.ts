@@ -23,6 +23,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { UserprofileComponent } from './userprofile/userprofile.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material';
+
 
 
 const routes: Routes = [
@@ -63,6 +66,9 @@ const routes: Routes = [
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+
     ],
   exports:[RouterModule], 
   providers: [CalenderService,DashboardService,ProductsService,UsersService],

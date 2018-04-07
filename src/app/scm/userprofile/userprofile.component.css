@@ -1,0 +1,50 @@
+.card{
+    padding:10px;
+}
+.editicon{
+    background-color: #fbbc05;
+    color: white;
+    border-radius: 10px;
+    font-size:20px;
+    margin-top: 10px;
+}
+.personal{
+    font-size:25px;
+    color:#0d59e3;
+    font-weight: bold;
+}
+.details h6{
+    font-size: 20px;
+    font-weight: bold;
+}
+.paymentdue li{
+    list-style: none;
+}
+.payment li{
+    list-style: none;
+    display:inline;
+}
+.money{
+    font-size: 30px;
+    color: #d23c30;
+}
+.milk{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.datepicker{
+    color: #fbbc05;
+    font-size: 25px;
+}
+.calender li{
+    list-style: none;
+    display:inline;
+}
+.add{
+    background-color:  #fbbc05 ;
+    color: #ffffff ;
+    margin: 10px;
+    margin-right: 0px;
+    width: 40px;
+ }
