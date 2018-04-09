@@ -1,4 +1,87 @@
-<p>
-  calender works!
-</p>
+<mat-toolbar>Vendor Calender</mat-toolbar>
+<div class="col-md-12 search">
+  <input type="text" name="search" placeholder="Search" style="height: 40px;width:  100%;">
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8 milk">
+      <h5>Milk Subscription Details</h5>
+    </div>
+    <div class="col-md-4 text-right">
+      <mat-form-field>
+        <mat-datepicker-toggle class="datepicker" matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <mat-card class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/assets/images/milk.png" style="width: 70px;height: 70px;">
+          </div>
+          <div class="col-md-4 packs">
+            <h6>Full Cream Milk</h6>
+            <ul>
+              <li>Heritage</li>
+              <li>203 Packs</li>
+            </ul>
+          </div>
+          <div class="col-md-2 litre">
+            <p>1lit</p>
+          </div>
+          <div class="co-md-3 money text-right">
+            <h5>$1243/-</h5>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-4">
+      <mat-card class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/assets/images/milk.png" style="width: 70px;height: 70px;">
+          </div>
+          <div class="col-md-4 packs">
+            <h6>Full Cream Milk</h6>
+            <ul>
+              <li>Heritage</li>
+              <li>203 Packs</li>
+            </ul>
+          </div>
+          <div class="col-md-2 litre">
+            <p>1lit</p>
+          </div>
+          <div class="co-md-3 money text-right">
+            <h5>$1243/-</h5>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-4">
+      <mat-card class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/assets/images/milk.png" style="width: 70px;height: 70px;">
+          </div>
+          <div class="col-md-4 packs">
+            <h6>Full Cream Milk</h6>
+            <ul>
+              <li>Heritage</li>
+              <li>203 Packs</li>
+            </ul>
+          </div>
+          <div class="col-md-2 litre">
+            <p>1lit</p>
+          </div>
+          <div class="co-md-3 money text-right">
+            <h5>$1243/-</h5>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>

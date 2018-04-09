@@ -1,20 +1,20 @@
 <mat-toolbar>Users</mat-toolbar>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" (click)="onSelect(item)" *ngFor="let item of list">
             <mat-card>
                 <div class="row">
                     <div class="col-md-6 personal">
                         <h5>Personal Details</h5>
                     </div>
                     <div class="col-md-6 text-right">
-                        <i class="material-icons editicon">mode_edit</i>
+                       <a><i class="material-icons editicon" routerLink="../personaldetails" routerLinkActive="active">mode_edit</i></a> 
                     </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-6 details">
-                        <h6>Sri Harsha</h6>
+                        <h6>{{item.name}}</h6>
                     </div>
                 </div>
                 <div class="row">
@@ -22,13 +22,13 @@
                         <i class="material-icons">message</i>
                     </div>
                     <div class="col-md-4">
-                        <p>harsha1@gmail.com</p>
+                        <p>{{item.email}}</p>
                     </div>
                     <div class="col-md-1">
                         <i class="material-icons">phone</i>
                     </div>
                     <div class="col-md-4">
-                        123456789
+                        {{item.mobile}}
                     </div>
                 </div>
                 <div class="row">
@@ -36,7 +36,7 @@
                         <i class="material-icons">location_on</i>
                     </div>
                     <div class="col-md-11">
-                        <p>Plot no 8/197,Madhura nagar colony, Gachibowli, Hyderabad</p>
+                        <p>{{item.address}}</p>
                     </div>
                 </div>
             </mat-card>

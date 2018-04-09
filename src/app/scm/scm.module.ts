@@ -15,7 +15,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
-import {CommonModule} from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { PersonaldetailsComponent } from './personaldetails/personaldetails.component';
 import { UserregistrationComponent } from './userregistration/userregistration.component';
 import { MatInputModule } from '@angular/material/input';
