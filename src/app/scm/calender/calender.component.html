@@ -1,13 +1,14 @@
 <mat-toolbar>Vendor Calender</mat-toolbar>
 <div class="col-md-12 search">
-  <input type="text" name="search" placeholder="Search" style="height: 40px;width:  100%;">
+  <!-- <i class="material-icons">search</i> -->
+  <input type="text" name="search" placeholder="Search" style="height: 40px;width:100%;">
 </div>
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-8 milk">
       <h5>Milk Subscription Details</h5>
     </div>
-    <div class="col-md-4 text-right">
+    <div class="col-md-4 text-right date">
       <mat-form-field>
         <mat-datepicker-toggle class="datepicker" matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>

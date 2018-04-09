@@ -1,4 +1,92 @@
-<p>
-  products works!
-</p>
+<mat-toolbar>Products</mat-toolbar>
+<div class="col-md-12 search">
+  <input type="text" name="search" placeholder="Search" style="height: 40px;width:  100%;">
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <mat-card class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/assets/images/milk.png" style="width: 70px;height: 70px;">
+          </div>
+          <div class="col-md-4 packs">
+            <h6>Full Cream Milk</h6>
+            <p>Heritage</p>
+          </div>
+          <div class="col-md-5">
+            <i class="material-icons editicon">mode_edit</i>
+          </div>
+        </div>
+        <hr>
+        <div class="row litre">
+          <div class="col-md-6">
+            <h6>1 Litre</h6>
+          </div>
+          <div class="col-md-6 text-right">
+            <h6>$45</h6>
+          </div>
+        </div>
+        <hr>
+        <div class="row ml">
+          <div class="col-md-6 ">
+            <h6>500ml</h6>
+          </div>
+          <div class="col-md-6 text-right">
+            <h6>$22</h6>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div class="col-md-4">
+      <mat-card class="card">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="/assets/images/milk.png" style="width: 70px;height: 70px;">
+          </div>
+          <div class="col-md-4 packs">
+            <h6>Full Cream Milk</h6>
+            <p>Heritage</p>
+          </div>
+          <div class="col-md-5">
+            <i class="material-icons check">check_circle</i>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput value="1 Litre">
+              </mat-form-field>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput value="$45">
+              </mat-form-field>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput value="1 Litre">
+              </mat-form-field>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <form class="example-form">
+              <mat-form-field class="example-full-width">
+                <input matInput value="$45">
+              </mat-form-field>
+            </form>
+          </div>
+        </div>
+        <i class="material-icons add">add_circle</i>
+      </mat-card>
+    </div>
+  </div>
+</div>
 <router-outlet></router-outlet>
