@@ -18,7 +18,7 @@ export class UsersComponent implements OnInit {
   },
  {
   id:2,
-  name:"krupa",
+  name:"Krupa",
   mobile:"123456789",
   email:"harsha2@gmail.com",
   address:"Plot no 8/197, Sai shathi men's hostel,Madhura nagar colony, Gachibowli, Hyderabad,500032",

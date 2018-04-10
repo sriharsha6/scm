@@ -1,7 +1,8 @@
 <mat-toolbar>Vendor Calender</mat-toolbar>
-<div class="col-md-12 search">
-  <!-- <i class="material-icons">search</i> -->
-  <input type="text" name="search" placeholder="Search" style="height: 40px;width:100%;">
+<div class="col-md-12 slinput" ng-init="">
+    <i class="fa fa-search left-icon"></i> 
+    <input placeholder="Search" ng-model="searchInputVal"/> 
+    <i ng-class="{'fa' : true, 'fa-close' : true, 'right-icon' : true, active : (searchInputVal.length > 0)}" ng-click="searchInputVal = ''"></i>
 </div>
 <div class="container-fluid">
   <div class="row">

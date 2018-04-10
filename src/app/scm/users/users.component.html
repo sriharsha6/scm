@@ -1,40 +1,44 @@
 <mat-toolbar>Users</mat-toolbar>
-<div class="search">
-    <input type="text" name="search" placeholder="Name,Moblie,Address" style="height: 40px;width:  100%;">
+<div class="col-md-12 slinput" ng-init="">
+    <i class="fa fa-search left-icon"></i>
+    <input placeholder="Name,Mobile,Address" ng-model="searchInputVal" />
+    <i ng-class="{'fa' : true, 'fa-close' : true, 'right-icon' : true, active : (searchInputVal.length > 0)}" ng-click="searchInputVal = ''"></i>
 </div>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-md-4 card" (click)="onSelect(item)" *ngFor="let item of list">
-            <div class="row">
-                <div class="col-md-8 name">
-                    <h5>{{item.name}}</h5>
+        <div class="col-md-4" (click)="onSelect(item)" *ngFor="let item of list">
+            <mat-card class="card">
+                <div class="row">
+                    <div class="col-md-8 name">
+                        <h5>{{item.name}}</h5>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <a routerLink="../personaldetails" routerLinkActive="active">
+                            <i class="material-icons editicon">mode_edit</i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-4 text-right">
-                    <a routerLink="../personaldetails" routerLinkActive="active">
-                        <i class="material-icons editicon">mode_edit</i>
-                    </a>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h6>{{item.mobile}}</h6>
+                    </div>
+                    <div class="col-md-6">
+                        <h6>{{item.email}}</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h6>{{item.mobile}}</h6>
+                <div class="row">
+                    <div class="col-md-12 address">
+                        <h6>{{item.address}}</h6>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <h6>{{item.email}}</h6>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12 payment">
+                        <h5>{{item.paymentDue}}</h5>
+                        <h4>{{item.amount}}</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 address">
-                    <h6>{{item.address}}</h6>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-12 payment">
-                    <h5>{{item.paymentDue}}</h5>
-                    <h4>{{item.amount}}</h4>
-                </div>
-            </div>
+            </mat-card>
         </div>
     </div>
 </div>
