@@ -1,11 +1,3 @@
-.card{
-    border-radius: 4px;
-    border-left-style: solid;
-    border-left-color: #4285f4 ;
-    border-left-width: 5px;
-    padding: 10px;
-    margin-top: 10px;
-}
 .slinput input {
     padding:10px;
     width:100%;
@@ -17,40 +9,48 @@
     font-size: 16px;
   }
   /* Remove IE10's “clear field” X button */
-  .slinput input::-ms-clear {
+.slinput input::-ms-clear {
       display: none;
   }
-  .slinput input:focus {
+.slinput input:focus {
     border:1px solid #4d90fe;
   }
   
   /* left side icon style (search icon) */
-  .slinput .left-icon {
+.slinput .left-icon {
     position:absolute;
     left:25px;
     top:15px;
   }
-  .slinput .fa {
+.slinput .fa {
     color:#444;
     font-size: 16px;
   }
-  .slinput .fa-close {
+.slinput .fa-close {
     color:#ccc;
   }
-  .slinput .active {
+.slinput .active {
     color:#555;
   }
   /* right side icon style (search icon) */
-  .slinput .right-icon {
+.slinput .right-icon {
     position:absolute;
     right:10px;
     top:11px;
     cursor:pointer;
   }
-  .slinput {
+.slinput {
     position:relative;
     width:100%;
   }
+.card{
+    border-radius: 4px;
+    border-left-style: solid;
+    border-left-color: #4285f4 ;
+    border-left-width: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
 .packs h6{
     font-size:13px;
     font-weight: bold;
@@ -58,13 +58,6 @@
 .packs{
     font-size:13px;
     font-weight:bold;
-}
-.editicon{
-    background-color: #fbbc05;
-    color: white;
-    border-radius: 10px;
-    font-size:  20px;
-    float: right;
 }
 .litre h6{
     font-size: 12px;
@@ -74,22 +67,13 @@
     font-size: 12px;
     font-weight: bold;
 }
-.check{
-    float: right;
-    color: #fbbc05;
-}
-.example-form {
-    min-width: 150px;
-    max-width: 500px;
-    width: 100%;
-  }
-  
-.example-full-width {
-    width: 100%;
-}
-.add{
+.icon{
     color:#01a501;
 }
-::ng-deep .mat-form-field-underline {
-     background-color: black !important;
-}
+.check{
+    background-color:  #fbbc05 ;
+    color: #ffffff ;
+    margin: 10px;
+    margin-right: 0px;
+    width: 40px;
+ }

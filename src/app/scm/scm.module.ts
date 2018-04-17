@@ -18,13 +18,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
 import { PersonaldetailsComponent } from './personaldetails/personaldetails.component';
 import { UserregistrationComponent } from './userregistration/userregistration.component';
-import { MatInputModule } from '@angular/material/input';
+import { MatInputModule } from '@angular/material';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material';
+import { EditproductsComponent } from './editproducts/editproducts.component';
+import {MatFormFieldControl} from '@angular/material';
 
 
 
@@ -37,7 +39,8 @@ const routes: Routes = [
     { path:'dashboardhome',component:DashboardhomeComponent },
     { path:'personaldetails',component:PersonaldetailsComponent },
     { path:'userregistration',component:UserregistrationComponent },
-    { path:'userprofile', component:UserprofileComponent},
+    { path:'userprofile', component:UserprofileComponent },
+    { path:'editproducts', component:EditproductsComponent },
   ] },
 
 ];
@@ -52,6 +55,7 @@ const routes: Routes = [
     PersonaldetailsComponent,
     UserregistrationComponent,
     UserprofileComponent,
+    EditproductsComponent,
   ],
   imports: [
     MatSidenavModule,

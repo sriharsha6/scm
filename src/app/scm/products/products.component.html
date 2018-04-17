@@ -1,8 +1,8 @@
 <mat-toolbar>Products</mat-toolbar>
 <div class="col-md-12 slinput" ng-init="">
-    <i class="fa fa-search left-icon"></i> 
-    <input placeholder="Search" ng-model="searchInputVal"/> 
-    <i ng-class="{'fa' : true, 'fa-close' : true, 'right-icon' : true, active : (searchInputVal.length > 0)}" ng-click="searchInputVal = ''"></i>
+  <i class="fa fa-search left-icon"></i>
+  <input placeholder="Search" ng-model="searchInputVal" />
+  <i ng-class="{'fa' : true, 'fa-close' : true, 'right-icon' : true, active : (searchInputVal.length > 0)}" ng-click="searchInputVal = ''"></i>
 </div>
 <div class="container-fluid">
   <div class="row">
@@ -17,25 +17,38 @@
             <p>Heritage</p>
           </div>
           <div class="col-md-5">
-            <i class="material-icons editicon">mode_edit</i>
+            <button (click)="!editMode=true">
+              <i class="material-icons editicon">mode_edit</i>
+            </button>
+            <button (click)="!editMode=false">
+              <i class="material-icons check">check_circle</i>
+            </button>
           </div>
         </div>
-        <hr>
         <div class="row litre">
           <div class="col-md-6">
-            <h6>1 Litre</h6>
+            <form class="litre">
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="1 Litre" [disabled]="!editMode" [(ngModel)]="litre" [ngModelOptions]="{standalone: true}">
+              </mat-form-field>
+            </form>
           </div>
           <div class="col-md-6 text-right">
-            <h6>$45</h6>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="$" [disabled]="!editMode" [(ngModel)]="$" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
           </div>
         </div>
-        <hr>
         <div class="row ml">
           <div class="col-md-6 ">
-            <h6>500ml</h6>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="ml" [disabled]="!editMode" [(ngModel)]="ml" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
           </div>
           <div class="col-md-6 text-right">
-            <h6>$22</h6>
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="$" [disabled]="!editMode" [(ngModel)]="price" [ngModelOptions]="{standalone: true}">
+            </mat-form-field>
           </div>
         </div>
       </mat-card>
