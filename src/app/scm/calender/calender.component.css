@@ -80,3 +80,13 @@
     border-left-width: 5px;
     padding: 10px;
 }
+::ng-deep .mat-form-field-underline{
+    height: 0px !important;
+ }
+.mat-form-field{
+    width: 150px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+}
